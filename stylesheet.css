@@ -1,12 +1,36 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", sans-serif;
 }
 
-#name {
-    font-size: 7.8vw;
-    color: #818181;
+.container {
+    margin-left: 8.28vw;
+}
+
+.name {
+    font-size: 149px;
+    color: #2E2E2E;
     font-family: "Roboto";
     font-weight: 500;
     /* padding: 0; */
     margin: 0;
+}
+
+.works-container {
+    font-size: 43px;
+    color: #D4D4D4;
+    font-weight: bold;
+    margin: 0;
+}
+
+.works-container p {
+    display: inline-block;
+}
+
+.works:hover {
+    color: #979797;
+}
+
+.description {
+    font-size: 20px;
+    color: #818181;
 }
