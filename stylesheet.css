@@ -131,6 +131,10 @@ body {
 
 /* スマホ */
 @media screen and (max-width: 599px) {
+    .container {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
     .name {
         font-size: 60px;
     }
