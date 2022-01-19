@@ -150,6 +150,12 @@ body {
     .p-text {
         position: relative;
     }
+    .program-p {
+        font-size: 24px;
+    }
+    .p-desc {
+        font-size: 16px;
+    }
     .p-image {
         position: relative;
         width: 100%;
