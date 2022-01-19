@@ -27,6 +27,10 @@ body {
     display: inline-block;
 }
 
+.works {
+    cursor: pointer;
+}
+
 .works:hover {
     color: #979797;
 }
@@ -60,11 +64,57 @@ body {
 .footer {
     margin-top: 80px;
     margin-bottom: 100px;
+    text-align: left;
+    word-wrap:break-word;
 }
-   
-/* ココから下がPC表示（600px以上）のレイアウト */
+
+#programs {
+    display: none;
+    flex-flow: column;
+    width: 100%;
+    height: calc(38vw * 2);
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.p-item {
+    position: relative;
+    height: 38vw;
+}
+
+.p-text {
+    position: absolute;
+    text-align: left;
+}
+
+.program-p {
+    font-size: 30px;
+    color: #707070;
+    font-weight: bold;
+    margin: 0;
+}
+
+.p-desc {
+    font-size: 20px;
+    color: #818181;
+    margin: 0;
+}
+
+.p-image {
+    position: absolute;
+    width: 62%;
+    right: 0;
+    box-shadow: -5.2vw 5.2vw 0px #555555;
+    cursor: pointer;
+}
+
+.p-image:hover {
+    filter: brightness(70%);
+}
+
+/* PC */
 @media screen and (min-width: 600px) {
-    .videos{
+    #videos{
         display: flex;
         margin-bottom: 1.5rem;
         justify-content: space-between;
@@ -79,14 +129,30 @@ body {
     }
 }
 
+/* スマホ */
 @media screen and (max-width: 599px) {
     .name {
-        font-size: 50px;
+        font-size: 60px;
     }
     .works-container {
-        font-size: 14px;
+        font-size: 24px;
     }
     .description {
-        font-size: 6.6px;
+        font-size: 16px;
+    }
+
+    #programs {
+        height: calc(66vw * 2);
+    }
+    .p-item {
+        height: 66vw;
+    }
+    .p-text {
+        position: relative;
+    }
+    .p-image {
+        position: relative;
+        width: 100%;
+        box-shadow: none;
     }
 }
