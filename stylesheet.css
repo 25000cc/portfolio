@@ -8,7 +8,7 @@ body {
 }
 
 .name {
-    font-size: 149px;
+    font-size: 150px;
     color: #2E2E2E;
     font-family: "Roboto";
     font-weight: 500;
@@ -38,14 +38,14 @@ body {
 .description {
     font-size: 20px;
     color: #818181;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .item {
     position: relative;
-    height: 0;
-    margin-bottom: 20px;
-    padding-bottom: 56.25%;
+    width: 100%;
+    padding: calc(315 / 560 * 100%) 0 0;
+    margin-bottom: 50px;
     overflow: hidden;
 }
 
@@ -54,24 +54,39 @@ body {
     top: 0;
     right: 0;
     width: 100%;
-    height: 50%;
+    height: 100%;
+}
+
+.footer {
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
    
 /* ココから下がPC表示（600px以上）のレイアウト */
 @media screen and (min-width: 600px) {
-  .videos{
-    display: flex;
-    margin-bottom: 1.5rem;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .item{
-    flex-basis: 49.5%;
-  }
+    .videos{
+        display: flex;
+        margin-bottom: 1.5rem;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .item{
+        flex-basis: 49.5%;
+        padding-top: calc(315 / 560 * 100% /2);
+    }
+    .item iframe {
+        height: 100%;
+    }
 }
-  
 
-.footer {
-    margin-top: 100px;
-    margin-bottom: 100px;
+@media screen and (max-width: 599px) {
+    .name {
+        font-size: 50px;
+    }
+    .works-container {
+        font-size: 14px;
+    }
+    .description {
+        font-size: 6.6px;
+    }
 }
