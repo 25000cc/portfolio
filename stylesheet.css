@@ -132,8 +132,8 @@ body {
 /* スマホ */
 @media screen and (max-width: 599px) {
     .container {
-        margin-left: 4vw;
-        margin-right: 4vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
     .name {
         font-size: 60px;
@@ -146,10 +146,10 @@ body {
     }
 
     #programs {
-        height: calc(66vw * 2);
+        height: calc(68vw * 2);
     }
     .p-item {
-        height: 66vw;
+        height: 68vw;
     }
     .p-text {
         position: relative;
